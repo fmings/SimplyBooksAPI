@@ -13,6 +13,14 @@ namespace SimplyBooksAPI.API
                 return AuthorData.Authors.ToList();
             });
 
+            // GET AUTHORS BY USERID
+            app.MapGet("/{id}/authors", (int id) => {
+                List<Author> authors = AuthorData.Authors.Where(a => a.UserId == id).ToList();
+
+                return authors;
+
+            });
+
             // GET SINGLE AUTHOR
             app.MapGet("/author/{id}", (int id) =>
             {
