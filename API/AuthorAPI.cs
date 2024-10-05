@@ -2,5 +2,10 @@
 {
     public class AuthorAPI
     {
+        public static void Map(WebApplication app)
+        {
+         
+        }
+
     }
 }
