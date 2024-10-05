@@ -8,7 +8,7 @@ namespace SimplyBooksAPI.Data
         {
             new User
             {
-                Id = "201",
+                Id = 201,
                 FirstName = "Felicia",
                 LastName = "Mings",
                 Email = "mingsfelicia@gmail.com",
